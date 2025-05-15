@@ -40,3 +40,10 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Home() {
   return <App />;
 }
+"use client";
+
+import MiniApp from "~/components/MiniApp";
+
+export default function Page() {
+  return <MiniApp />;
+}

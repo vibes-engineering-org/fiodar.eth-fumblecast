@@ -56,3 +56,16 @@ export default async function RootLayout({
     </html>
   );
 }
+import type { ReactNode } from "react";
+import { PROJECT_TITLE } from "~/lib/constants";
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <head>
+        <title>{PROJECT_TITLE}</title>
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
