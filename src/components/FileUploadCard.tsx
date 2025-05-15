@@ -37,12 +37,3 @@ export default function FileUploadCard() {
     </Card>
   );
 }
-"use client";
-
-export default function FileUploadCard() {
-  return (
-    <div className="w-full p-4 border rounded-md text-center text-gray-500">
-      File Upload Card coming soon
-    </div>
-  );
-}

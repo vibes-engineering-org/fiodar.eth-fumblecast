@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "~/components/ui/card";
 import { createSupabaseClientWithToken } from "~/lib/supabase";
@@ -172,14 +173,5 @@ export default function BucketExplorer() {
         <div ref={observerRef} />
       </CardContent>
     </Card>
-  );
-}
-"use client";
-
-export default function BucketExplorer() {
-  return (
-    <div className="w-full p-4 border rounded-md text-center text-gray-500">
-      Bucket Explorer coming soon
-    </div>
   );
 }

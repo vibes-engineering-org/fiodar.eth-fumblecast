@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+
 import { createConfig, injected, WagmiConfig } from "wagmi";
 import { base, degen, mainnet, optimism } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
