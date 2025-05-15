@@ -174,3 +174,12 @@ export default function BucketExplorer() {
     </Card>
   );
 }
+"use client";
+
+export default function BucketExplorer() {
+  return (
+    <div className="w-full p-4 border rounded-md text-center text-gray-500">
+      Bucket Explorer coming soon
+    </div>
+  );
+}

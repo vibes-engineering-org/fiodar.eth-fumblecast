@@ -14,6 +14,7 @@ import { Label } from "~/components/ui/label";
 import { useFrameSDK } from "~/hooks/useFrameSDK";
 import { baseUSDC } from "@daimo/contract";
 import { getAddress } from "viem";
+import Fumbler from "./Fumbler";
 import BucketExplorer from "./BucketExplorer";
 
 function ExampleCard() {
@@ -63,7 +64,7 @@ function PaymentComponent() {
           <DaimoPayButton
             appId={process.env.NEXT_PUBLIC_DAIMO_PAY_KEY || "pay-demo"}
             toChain={baseUSDC.chainId}
-            toUnits="1.00" /* $1.00 USDC */
+            toUnits="1.00"
             toToken={getAddress(baseUSDC.token)}
             toAddress={address}
             onPaymentStarted={(e) => console.log(e)}
@@ -85,6 +86,7 @@ export default function MiniApp() {
   return (
     <div className="w-[400px] mx-auto py-2 px-2 space-y-4">
       <ExampleCard />
+      <Fumbler />
       <PaymentComponent />
       <FileUploadCard />
       <BucketExplorer />
